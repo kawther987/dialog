@@ -1,0 +1,20 @@
+.drpdown-area {
+  h3 {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .p-inputtext {
+    padding: 10px;
+    font-size: 11px !important;
+  }
+  .p-dropdown .p-dropdown-label {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .drpdown-area {
+    flex-wrap: wrap;
+  }
+}

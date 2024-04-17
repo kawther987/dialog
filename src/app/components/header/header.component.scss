@@ -1,0 +1,27 @@
+@import "../../../styles.scss";
+
+header {
+  color: $main-color;
+  font-family: "Neo Sans Arabic", "Inter";
+  .title {
+    font: {
+      size: 12px;
+      weight: 500;
+    }
+    line-height: 14.4px;
+  }
+  .closeIcon {
+    width: 22px;
+    height: 22px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    i {
+      font: {
+        size: 10px;
+        weight: 600;
+      }
+    }
+  }
+}

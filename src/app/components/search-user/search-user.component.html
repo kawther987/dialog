@@ -1,0 +1,63 @@
+<!-- <span class="p-input-icon-left">
+  <i class="pi pi-search"></i>
+   <input type="text" /> 
+  <p-autoComplete
+    [(ngModel)]="selectedUser"
+    [suggestions]="filteredUsers"
+    (completeMethod)="searchUsers($event)"
+    field="name"
+    [dropdown]="false"
+  >
+    <ng-template let-user pTemplate="item">
+      <img
+        width="70"
+        src="{{ user.image }}"
+        alt="{{ user.name }} "
+        class="contact-image ps-3"
+      />
+      <span>{{ user.name }}</span>
+    </ng-template>
+  </p-autoComplete>
+</span> -->
+
+<!-- <p-autoComplete
+    type="search"
+    [(ngModel)]="selectedUser"
+    [suggestions]="filteredUsers"
+    (completeMethod)="searchUsers($event)"
+    field="name"
+    [dropdown]="false"
+    placeholder="إبحث عن عميل : مثال اسم العميل , رقم الهاتف"
+  >
+    <i class="search-icon pi pi-search position-absolute"></i>
+    <ng-template let-user pTemplate="item">
+      <img
+        src="{{ user.image }}"
+        alt="{{ user.name }} "
+        class="contact-image"
+      />
+      <span>{{ user.name }}</span>
+    </ng-template>
+  </p-autoComplete>
+  <i class="search-icon pi pi-search position-absolute"></i> -->
+<div class="p-input-icon-left">
+  <p-autoComplete
+    type="search"
+    [(ngModel)]="selectedUser"
+    [suggestions]="filteredUsers"
+    (completeMethod)="searchUsers($event)"
+    field="name"
+    [dropdown]="false"
+    placeholder="إبحث عن عميل : مثال اسم العميل , رقم الهاتف"
+  >
+    <ng-template let-user pTemplate="item">
+      <img
+        src="{{ user.image }}"
+        alt="{{ user.name }} "
+        class="contact-image"
+      />
+      <span>{{ user.name }}</span>
+    </ng-template>
+  </p-autoComplete>
+  <i class="search-icon pi pi-search"></i>
+</div>

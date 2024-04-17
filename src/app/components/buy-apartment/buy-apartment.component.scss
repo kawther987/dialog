@@ -1,0 +1,150 @@
+@import "../../../styles.scss";
+section {
+  background: #fafafa;
+  padding-block: 16px;
+  border-bottom: 0.65px solid #dadce2;
+  border-top: 0.65px solid #dadce2;
+  font-family: "Neo Sans Arabic", "Inter";
+  color: $main-color;
+  .input-text-area {
+    .firstInput {
+      font: {
+        size: 12px;
+        weight: 500;
+      }
+      color: $main-color;
+      height: 32px;
+    }
+  }
+  .inputs-area {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 8px;
+    width: 50%;
+    .user-icon {
+      margin-left: 9px;
+    }
+    h3 {
+      font-size: 10px;
+    }
+    h4 {
+      font-size: 8px;
+    }
+  }
+  .search-area {
+    border: 1px dashed #0771de;
+  }
+  .disabled-area {
+    border: 0.5px solid #83899f4d;
+    background: #fff;
+    .disabled-input {
+      padding: 1px;
+      margin-top: 1px;
+      font-weight: 500;
+    }
+  }
+  .range-area {
+    border: 0.5px solid #83899f4d;
+    background-color: #fff;
+    padding: 22px 11px;
+    border-radius: 8px;
+    margin-block: 10px;
+
+    h3 {
+      font-size: 10px;
+      font-weight: 400;
+      margin: 0 9px 0 4px;
+    }
+    .edit-icon {
+      width: 20px;
+      height: 20px;
+      border: 0.5px solid #e0e0e0;
+      font-size: 10px;
+      display: grid;
+      place-items: center;
+      border-radius: 5px;
+    }
+    .input-slider {
+      width: 65%;
+    }
+  }
+  .chips-area {
+    h3 {
+      font-size: 10px;
+      margin-top: 12px;
+    }
+    ul {
+      padding: 0;
+    }
+  }
+  .product-area {
+    background-color: #fff;
+    border: 0.5px solid #83899f66;
+    border-radius: 5px;
+    h3 {
+      font-size: 12px;
+      padding-right: 4px;
+    }
+
+    .product-box {
+      p-button {
+        font-size: 9px !important;
+      }
+
+      .p-button-icon-left {
+        margin: 0px;
+      }
+      h4 {
+        font: {
+          size: 10px;
+          font-weight: 500;
+        }
+      }
+      h5 {
+        font: {
+          size: 8px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .extra-info {
+    padding: 10px;
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .test {
+    flex-wrap: wrap;
+  }
+
+  section {
+    .inputs-area {
+      width: 100%;
+    }
+    .product-area {
+      .product-box {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+    .range-area {
+      flex-wrap: wrap;
+      .input-slider {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+datalist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 7px;
+  padding: 0 5px;
+  font-size: 8px;
+}

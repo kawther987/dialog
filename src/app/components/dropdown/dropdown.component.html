@@ -1,0 +1,47 @@
+<div class="d-flex justify-content-center drpdown-area">
+  <div>
+    <h3>مسئول الصفقة</h3>
+    <div class="p-input-icon-left">
+      <input type="text" pInputText value=" محمد الغريب" />
+      <i class="pi pi-user-plus"></i>
+    </div>
+  </div>
+  <div class="mx-2">
+    <h3>المصدر</h3>
+    <p-dropdown
+      [options]="media"
+      [(ngModel)]="selectedMedia"
+      [editable]="true"
+      optionLabel="name"
+      placeholder="اختر المنصه"
+    >
+      <ng-template let-user pTemplate="item">
+        <img
+          src="{{ user.image }}"
+          alt="{{ user.name }} "
+          class="contact-image"
+        />
+        <span>{{ user.name }}</span>
+      </ng-template>
+    </p-dropdown>
+  </div>
+  <div>
+    <h3>المشروع</h3>
+    <p-dropdown
+      [options]="project"
+      [(ngModel)]="selectedProject"
+      placeholder="اختر المشروع"
+      [editable]="true"
+      optionLabel="name"
+    >
+      <ng-template let-user pTemplate="item">
+        <img
+          src="{{ user.image }}"
+          alt="{{ user.name }} "
+          class="contact-image"
+        />
+        <span>{{ user.name }}</span>
+      </ng-template>
+    </p-dropdown>
+  </div>
+</div>
